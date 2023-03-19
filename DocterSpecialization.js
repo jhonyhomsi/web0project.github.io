@@ -11,6 +11,7 @@ fetch('https://doctors-database.onrender.com')
     specializations.forEach(specialization => {
       const optionElement = document.createElement('option');
       optionElement.value = specialization;
+      
       optionElement.textContent = specialization;
       selectElement.appendChild(optionElement);
     });
